@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_app/home.dart';
-import 'package:simple_app/mat.dart';
-import 'package:simple_app/mater.dart';
-import 'package:simple_app/text.dart';
+
 
 class homepage extends StatefulWidget {
   homepage({Key? key}) : super(key: key);
@@ -28,7 +25,7 @@ class _homepageState extends State<homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.home),
+          //leading: Icon(Icons.home),
           actions: [
             Icon(Icons.search),
             SizedBox(
@@ -45,7 +42,53 @@ class _homepageState extends State<homepage> {
         body: Center(
           child: _widgetoptions.elementAt(_SelectedIndex),
         ),
-        
+        drawer :Drawer(child: ListView(
+          children: <Widget>[
+            DrawerHeader(child:
+        Text('Menu', style: TextStyle(color: Colors.black),),
+            decoration: BoxDecoration(
+              color: Colors.grey
+            ),
+            ),
+            ListTile(
+              title: Row(
+                children: [
+                  Text('Home'),SizedBox(width: 10,),Icon(Icons.home, size: 20,)
+                ],
+              ),
+            ),
+            ListTile(
+              title: Row(
+                children: [
+                  Text('Storage'),SizedBox(width: 10,),Icon(Icons.storage, size: 20,)
+                ],
+              ),
+            ),
+            ListTile(
+              title: Row(
+                children: [
+                  Text('Dashboard'),SizedBox(width: 10,),Icon(Icons.dashboard, size: 20,)
+                ],
+              ),
+            ),
+            ListTile(
+              title: Row(
+                children: [
+                  Text('Help'),SizedBox(width: 10,),Icon(Icons.help, size: 20,)
+                ],
+              ),
+            ),
+            ListTile(
+              title: Row(
+                children: [
+                  Text('Logout'),SizedBox(width: 10,),Icon(Icons.logout, size: 20,)
+                ],
+              ),
+            ),
+          ],
+        ),
+
+        ),
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
@@ -70,6 +113,7 @@ class _homepageState extends State<homepage> {
           currentIndex: _SelectedIndex,
           selectedItemColor: Colors.black,
           onTap: _onItemtapped,
-        ));
+        ),
+    );
   }
 }

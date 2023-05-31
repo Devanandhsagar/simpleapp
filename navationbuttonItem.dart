@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class homepage extends StatefulWidget {
   homepage({Key? key}) : super(key: key);
 
@@ -52,36 +51,36 @@ class _homepageState extends State<homepage> {
             ),
             ListTile(
               title: Row(
-                children: [
-                  Text('Home'),SizedBox(width: 10,),Icon(Icons.home, size: 20,)
+                children: [Icon(Icons.home, size: 20,),SizedBox(width: 5,),
+                  Text('Home'),SizedBox(width: 10,)
                 ],
               ),
             ),
             ListTile(
               title: Row(
-                children: [
-                  Text('Storage'),SizedBox(width: 10,),Icon(Icons.storage, size: 20,)
+                children: [Icon(Icons.storage, size: 20,),SizedBox(width: 5,),
+                  Text('Storage'),SizedBox(width: 10,)
                 ],
               ),
             ),
             ListTile(
               title: Row(
-                children: [
-                  Text('Dashboard'),SizedBox(width: 10,),Icon(Icons.dashboard, size: 20,)
+                children: [Icon(Icons.dashboard, size: 20,),SizedBox(width: 5,),
+                  Text('Dashboard'),SizedBox(width: 10,)
                 ],
               ),
             ),
             ListTile(
               title: Row(
-                children: [
-                  Text('Help'),SizedBox(width: 10,),Icon(Icons.help, size: 20,)
+                children: [Icon(Icons.help, size: 20,),SizedBox(width: 5,),
+                  Text('Help'),SizedBox(width: 10,)
                 ],
               ),
             ),
             ListTile(
               title: Row(
-                children: [
-                  Text('Logout'),SizedBox(width: 10,),Icon(Icons.logout, size: 20,)
+                children: [Icon(Icons.logout, size: 20,),SizedBox(width: 5,),
+                  Text('Logout'),SizedBox(width: 10,)
                 ],
               ),
             ),

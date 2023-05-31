@@ -55,7 +55,14 @@ class _homepageState extends State<homepage> {
              }
          ),
        ],),
-     )
+     ),bottomNavigationBar: BottomAppBar( color: Colors.black12 ,child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: <Widget> [
+       IconButton(onPressed: (){}, icon: Icon(Icons.message , size: 20,color: Colors.white,)),
+      IconButton(onPressed: (){}, icon: Icon(Icons.file_copy,size: 20,color: Colors.cyan,)),
+      IconButton(onPressed: (){}, icon: Icon(Icons.storage,size: 20,color: Colors.cyan,)),
+      IconButton(onPressed: (){}, icon: Icon(Icons.settings, size: 20,color: Colors.white,))
+    ]
+    ),
+    ),
     );
   }
 }
